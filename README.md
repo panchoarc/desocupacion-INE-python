@@ -1,19 +1,24 @@
 Este repositorio contiene un notebook de Python (`Desocupacion_INE.ipynb`) que realiza un análisis de los datos de desocupación proporcionados por el INE. A continuación, se detallan las instrucciones para ejecutar el notebook en diferentes entornos.
 
-## Tabla de contenidos 
-- [Requisitos](#requisitos)
-- [Estructura del Proyecto](#estructura-del-proyecto)
-- [Ejecución del Notebook](#ejecución-del-notebook)
-  - [Ejecución Local](#ejecución-local)
-  - [Ejecución con Docker](#ejecución-con-docker)
-    - [Linux](#linux)
-    - [Windows](#windows)
-- [Notas](#notas)
-- [Contribuciones](#contribuciones)
-- [Licencia](#licencia)
-- [TO DO](#to-do)
+# 1. DEMO DE GOOGLE COLAB
+ [Google colab](https://colab.research.google.com/drive/196qbWSBjMJi8RVF9bLl-3_sLQekLCnfy)
 
-# Requisitos
+# 2. Tabla de contenidos 
+- [1. DEMO DE GOOGLE COLAB](#1-demo-de-google-colab)
+- [2. Tabla de contenidos](#2-tabla-de-contenidos)
+- [3. Requisitos](#3-requisitos)
+- [4. Estructura del Proyecto](#4-estructura-del-proyecto)
+- [5. Ejecución del Notebook](#5-ejecución-del-notebook)
+  - [5.1. Ejecución Local](#51-ejecución-local)
+  - [5.2. Ejecución con Docker](#52-ejecución-con-docker)
+    - [5.2.1. Linux](#521-linux)
+    - [5.2.2. Windows](#522-windows)
+- [6. Notas](#6-notas)
+- [7. Contribuciones](#7-contribuciones)
+- [8. Licencia](#8-licencia)
+- [9. TO DO](#9-to-do)
+
+# 3. Requisitos
 
 Asegúrese de tener instaladas las siguientes herramientas:
 
@@ -22,7 +27,7 @@ Asegúrese de tener instaladas las siguientes herramientas:
 - Docker
 - Visual Studio Code (opcional, para abrir el proyecto)
 
-# Estructura del Proyecto
+# 4. Estructura del Proyecto
 
 - `Desocupacion_INE.ipynb`: Notebook de Jupyter con el análisis de los datos de desocupación.
 - `Dockerfile`: Archivo para construir la imagen de Docker.
@@ -30,9 +35,9 @@ Asegúrese de tener instaladas las siguientes herramientas:
 - `build_and_run.sh`: Script para construir y ejecutar el contenedor en Linux.
 - `build_and_run.bat`: Script para construir y ejecutar el contenedor en Windows.
 
-# Ejecución del Notebook
+# 5. Ejecución del Notebook
 
-## Ejecución Local
+## 5.1. Ejecución Local
 
 1. **Clonar el repositorio:**
 
@@ -72,9 +77,9 @@ Asegúrese de tener instaladas las siguientes herramientas:
 
     Abra `Desocupacion_INE.ipynb` dentro de VSCode o en el navegador con Jupyter Notebook y ejecute las celdas para realizar el análisis.
 
-## Ejecución con Docker
+## 5.2. Ejecución con Docker
 
-### Linux
+### 5.2.1. Linux
 
 1. **Ejecutar el script `build_and_run.sh`:**
 
@@ -96,7 +101,7 @@ Asegúrese de tener instaladas las siguientes herramientas:
    En este apartado, te pedirá el link al repositorio, como en la siguiente imagen: ![Clonar repositorio](/images/Clonar%20repositorio%202.png) e ingresas el link https://github.com/panchoarc/desocupacion-INE-python.git
 
 
-### Windows
+### 5.2.2. Windows
 
 1. **Ejecutar el script `build_and_run.bat`:**
 
@@ -120,20 +125,20 @@ Asegúrese de tener instaladas las siguientes herramientas:
 
 
 
-# Notas
+# 6. Notas
 
 - Asegúrese de actualizar el archivo `requirements.txt` con todas las bibliotecas necesarias para ejecutar el notebook.
 - Personalice el `Dockerfile` según sea necesario para incluir todas las dependencias y configuraciones adicionales.
 
-# Contribuciones
+# 7. Contribuciones
 
 Las contribuciones son bienvenidas. Por favor, haga un fork del repositorio y envíe un pull request con sus cambios.
 
-# Licencia
+# 8. Licencia
 
 Este proyecto está licenciado bajo la [MIT License](LICENSE).
 
-# TO DO
+# 9. TO DO
 - [ ] Agregar Documento en inglés
-- [ ] Agregar google colab para pruebas directas y link
-- [ ] Agregar apartado para al momento de ejecutar la imagen de docker, los pasos para clonar en el jupyter lab.
+- [x] Agregar google colab para pruebas directas y link
+- [X] Agregar apartado para al momento de ejecutar la imagen de docker, los pasos para clonar en el jupyter lab.
