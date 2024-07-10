@@ -1,8 +1,19 @@
-# Análisis de Desocupación INE
-
 Este repositorio contiene un notebook de Python (`Desocupacion_INE.ipynb`) que realiza un análisis de los datos de desocupación proporcionados por el INE. A continuación, se detallan las instrucciones para ejecutar el notebook en diferentes entornos.
 
-## Requisitos
+## Tabla de contenidos 
+- [Requisitos](#requisitos)
+- [Estructura del Proyecto](#estructura-del-proyecto)
+- [Ejecución del Notebook](#ejecución-del-notebook)
+  - [Ejecución Local](#ejecución-local)
+  - [Ejecución con Docker](#ejecución-con-docker)
+    - [Linux](#linux)
+    - [Windows](#windows)
+- [Notas](#notas)
+- [Contribuciones](#contribuciones)
+- [Licencia](#licencia)
+- [TO DO](#to-do)
+
+# Requisitos
 
 Asegúrese de tener instaladas las siguientes herramientas:
 
@@ -11,9 +22,17 @@ Asegúrese de tener instaladas las siguientes herramientas:
 - Docker
 - Visual Studio Code (opcional, para abrir el proyecto)
 
-## Ejecución del Notebook
+# Estructura del Proyecto
 
-### Ejecución Local
+- `Desocupacion_INE.ipynb`: Notebook de Jupyter con el análisis de los datos de desocupación.
+- `Dockerfile`: Archivo para construir la imagen de Docker.
+- `requirements.txt`: Archivo de dependencias de Python.
+- `build_and_run.sh`: Script para construir y ejecutar el contenedor en Linux.
+- `build_and_run.bat`: Script para construir y ejecutar el contenedor en Windows.
+
+# Ejecución del Notebook
+
+## Ejecución Local
 
 1. **Clonar el repositorio:**
 
@@ -32,9 +51,30 @@ Asegúrese de tener instaladas las siguientes herramientas:
     pip install -r requirements.txt
     ```
 
-### Ejecución con Docker
+3. **Abrir el proyecto en VSCode u otro editor de código:**
 
-#### Linux
+    - **Para abrir en VSCode:**
+
+        ```bash
+        cd direccion-donde-clonaste-el-proyecto
+        code .
+        ```
+
+    - **Para abrir en otro editor de código:**
+
+        Abre tu editor de código preferido y navega hasta la carpeta donde clonaste el repositorio.
+
+4. **Instalar la extensión de Jupyter (si usa VSCode):**
+
+    Asegúrese de tener instalada la extensión [Jupyter](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter) para VSCode.
+
+5. **Abrir y ejecutar el notebook:**
+
+    Abra `Desocupacion_INE.ipynb` dentro de VSCode o en el navegador con Jupyter Notebook y ejecute las celdas para realizar el análisis.
+
+## Ejecución con Docker
+
+### Linux
 
 1. **Ejecutar el script `build_and_run.sh`:**
 
@@ -42,7 +82,21 @@ Asegúrese de tener instaladas las siguientes herramientas:
     ./build_and_run.sh
     ```
 
-#### Windows
+2. **Abrir Jupyter Notebook en su navegador:**
+    
+    Abre `http://localhost:8888` en tu navegador. En el apartado de ingresar con token o password, usa las siguientes credenciales:
+
+    ```plaintext
+    - Token: token
+    - Password: admin
+    ```
+3. **Clonar repositorio de github en jupyter lab:**
+   1. Para ello, debes clickear el ícono de GIT que aparece al costado izquierdo y seleccionar clone a repository como en la siguiente imagen. ![Menu repositorio](/images/Clonar%20repositorio.png)
+   2. **Agregar URI a campo repositorio:**
+   En este apartado, te pedirá el link al repositorio, como en la siguiente imagen: ![Clonar repositorio](/images/Clonar%20repositorio%202.png) e ingresas el link https://github.com/panchoarc/desocupacion-INE-python.git
+
+
+### Windows
 
 1. **Ejecutar el script `build_and_run.bat`:**
 
@@ -51,55 +105,35 @@ Asegúrese de tener instaladas las siguientes herramientas:
     ```
 
 2. **Abrir Jupyter Notebook en su navegador:**
-
-    Abre `http://localhost:8888` en tu navegador. En el apartado de ingresar con token o password, el token predefinido en la configuración de Dockerfile son los siguientes:
+    
+    Abre `http://localhost:8888` en tu navegador. En el apartado de ingresar con token o password, usa las siguientes credenciales:
 
     ```plaintext
     - Token: token
     - Password: admin
     ```
+3. **Clonar repositorio de github en jupyter lab:**
+   1. Para ello, debes clickear el ícono de GIT que aparece al costado izquierdo y seleccionar clone a repository como en la siguiente imagen. ![Menu repositorio](/images/Clonar%20repositorio.png)
+   2. **Agregar URI a campo repositorio:**
+   En este apartado, te pedirá el link al repositorio, como en la siguiente imagen: ![Clonar repositorio](/images/Clonar%20repositorio%202.png) e ingresas el link https://github.com/panchoarc/desocupacion-INE-python.git
 
-### Abrir el Proyecto en VSCode
 
-1. **Abrir VSCode:**
 
-    ```bash
-    cd direccion-donde-clonaste-el-proyecto
-    code .
-    ```
 
-2. **Instalar la extensión de Jupyter:**
-
-    Asegúrese de tener instalada la extensión [Jupyter](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter) para VSCode.
-
-3. **Abrir y ejecutar el notebook:**
-
-    Abra `Desocupacion_INE.ipynb` dentro de VSCode y ejecute las celdas para realizar el análisis.
-
-## Estructura del Proyecto
-
-- `Desocupacion_INE.ipynb`: Notebook de Jupyter con el análisis de los datos de desocupación.
-- `Dockerfile`: Archivo para construir la imagen de Docker.
-- `requirements.txt`: Archivo de dependencias de Python.
-- `build_and_run.sh`: Script para construir y ejecutar el contenedor en Linux.
-- `build_and_run.bat`: Script para construir y ejecutar el contenedor en Windows.
-
-## Notas
+# Notas
 
 - Asegúrese de actualizar el archivo `requirements.txt` con todas las bibliotecas necesarias para ejecutar el notebook.
 - Personalice el `Dockerfile` según sea necesario para incluir todas las dependencias y configuraciones adicionales.
 
-## Contribuciones
+# Contribuciones
 
 Las contribuciones son bienvenidas. Por favor, haga un fork del repositorio y envíe un pull request con sus cambios.
 
-## Licencia
+# Licencia
 
 Este proyecto está licenciado bajo la [MIT License](LICENSE).
 
-
-
-### TO DO
+# TO DO
 - [ ] Agregar Documento en inglés
 - [ ] Agregar google colab para pruebas directas y link
-- [ ]  
+- [ ] Agregar apartado para al momento de ejecutar la imagen de docker, los pasos para clonar en el jupyter lab.
