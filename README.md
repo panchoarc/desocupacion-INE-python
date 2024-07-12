@@ -96,9 +96,13 @@ Asegúrese de tener instaladas las siguientes herramientas:
     - Password: admin
     ```
 3. **Clonar repositorio de github en jupyter lab:**
-   1. Para ello, debes clickear el ícono de GIT que aparece al costado izquierdo y seleccionar clone a repository como en la siguiente imagen. ![Menu repositorio](/images/Clonar%20repositorio.png)
+   1. Para ello, debes clickear el ícono de GIT que aparece al costado izquierdo y seleccionar clone a repository como en la siguiente imagen.
+   
+   ![Menu repositorio](/images/Clonar%20repositorio.png)
    2. **Agregar URI a campo repositorio:**
-   En este apartado, te pedirá el link al repositorio, como en la siguiente imagen: ![Clonar repositorio](/images/Clonar%20repositorio%202.png) e ingresas el link https://github.com/panchoarc/desocupacion-INE-python.git
+   En este apartado, te pedirá el link al repositorio, como en la siguiente imagen: 
+   
+   ![Clonar repositorio](/images/Clonar%20repositorio%202.png) e ingresas el link https://github.com/panchoarc/desocupacion-INE-python.git
 
 
 ### 5.2.2. Windows
@@ -118,9 +122,13 @@ Asegúrese de tener instaladas las siguientes herramientas:
     - Password: admin
     ```
 3. **Clonar repositorio de github en jupyter lab:**
-   1. Para ello, debes clickear el ícono de GIT que aparece al costado izquierdo y seleccionar clone a repository como en la siguiente imagen. ![Menu repositorio](/images/Clonar%20repositorio.png)
+   1. Para ello, debes clickear el ícono de GIT que aparece al costado izquierdo y seleccionar clone a repository como en la siguiente imagen.
+   
+   ![Menu repositorio](/images/Clonar%20repositorio.png)
    2. **Agregar URI a campo repositorio:**
-   En este apartado, te pedirá el link al repositorio, como en la siguiente imagen: ![Clonar repositorio](/images/Clonar%20repositorio%202.png) e ingresas el link https://github.com/panchoarc/desocupacion-INE-python.git
+   En este apartado, te pedirá el link al repositorio, como en la siguiente imagen: 
+   
+   ![Clonar repositorio](/images/Clonar%20repositorio%202.png) e ingresas el link https://github.com/panchoarc/desocupacion-INE-python.git
 
 
 
@@ -142,3 +150,4 @@ Este proyecto está licenciado bajo la [MIT License](LICENSE).
 - [ ] Agregar Documento en inglés
 - [x] Agregar google colab para pruebas directas y link
 - [X] Agregar apartado para al momento de ejecutar la imagen de docker, los pasos para clonar en el jupyter lab.
+- [x] Agregar descarga de gráficos a carpeta.
